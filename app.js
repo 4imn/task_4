@@ -9,7 +9,7 @@ const server = http.createServer((req,res)=>{
             console.log("sorry can't read from the server")
         }
         else {
-            res.writeHead(200,{"content-type":"text/plain"})
+            res.writeHead(200,{"content-type":"text/html"})
             res.end(data)
         }
     })
